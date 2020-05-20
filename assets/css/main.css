@@ -2631,3 +2631,20 @@ input, select, textarea {
 				}
 
 	}
+
+	#slider {
+		height:240px;
+		width:100%;
+		margin:auto;
+		overflow:hidden;
+		background:#FFFFFF;
+	}
+	
+	.slide {
+		height:240px;
+		float:left;
+		text-align:left;
+		border:8px SOLID #FFFFFF;
+		line-height:8em;
+		font-size:20px;
+	}

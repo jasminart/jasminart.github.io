@@ -5,21 +5,19 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="assets/js/script.js"></script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<div id="header">
-
 				<div class="top">
-
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
 							<h1 id="title">Jasmin</h1>
 							<p>I Doodle A Lot</p>
 						</div>
-
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
@@ -29,11 +27,8 @@
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
-
 				</div>
-
 				<div class="bottom">
-
 					<!-- Social Icons -->
 						<ul class="icons">
 							<li><a href="https://www.instagram.com/jl_sloth_artist/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -41,14 +36,11 @@
 							<li><a href="https://facebook.com/jasminliart" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="mailto:jasminliart@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-
 				</div>
-
 			</div>
 
 		<!-- Main -->
 			<div id="main">
-
 				<!-- Intro -->
 					<section id="top" class="one cover">
 						<div class="container">
@@ -73,23 +65,22 @@
 							<header>
 								<h2>My Doodles</h2>
 							</header>
-							<p>Here are some of my works!</p>
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="images/pic02-org.jpg" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="images/pic02-org.jpg" target="_blank" class="image fit modal "><img src="images/pic02.jpg" alt="" /></a>
 										<header>
 											<h3>My books! (to date)</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="images/pic03-org.jpg" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="images/pic03-org.jpg" target="_blank" class="image fit "><img src="images/pic03.jpg" alt="" /></a>
 										<header>
 											<h3>Some of my old art…</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="images/pic08-org.jpg" class="image fit"><img src="images/pic08.jpg" alt="" /></a>
+										<a href="images/pic08-org.jpg" target="_blank" class="image fit "><img src="images/pic08.jpg" alt="" /></a>
 										<header>
 											<h3>Tape some washi tapes!</h3>
 										</header>
@@ -97,19 +88,19 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="images/pic04-org.jpg" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="images/pic04-org.jpg" target="_blank" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
 										<header>
 											<h3>Newer but still old art...</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="images/pic05-org.jpg" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<a href="images/pic05-org.jpg" target="_blank" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
 										<header>
 											<h3>A sneak peak in my book!</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="images/pic09-org.jpg" class="image fit"><img src="images/pic09.jpg" alt="" /></a>
+										<a href="images/pic09-org.jpg" target="_blank" class="image fit"><img src="images/pic09.jpg" alt="" /></a>
 										<header>
 											<h3>Zentangles to de-stress</h3>
 										</header>
@@ -117,19 +108,19 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="images/pic06-org.jpg" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<a href="images/pic06-org.jpg" target="_blank" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
 										<header>
 											<h3>Art journaling!</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="images/pic07-org.jpg" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="images/pic07-org.jpg" target="_blank" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 										<header>
 											<h3>More stuff from my book...</h3>
 										</header>		
 									</article>
 									<article class="item">
-										<a href="images/pic10-org.jpg" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+										<a href="images/pic10-org.jpg" target="_blank" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
 										<header>
 											<h3>My newest book!  </h3>
 										</header>
@@ -141,7 +132,86 @@
 						<iframe width="420" height="280" src="https://www.youtube.com/embed/Th79iR9UvGI" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<p>Video for my book</p>
 						<p></p>
-						
+						<h2>My Books at-a-glance</h2>
+						<p></p>
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+						<script>
+							$(document).ready(function () {
+							//you can set this, as long as it's not greater than the slides length
+							var show = 8;
+							var w = $('#slider').width() / show;
+							var l = $('.slide').length;
+							
+							$('.slide').width(w);
+							$('#slide-container').width(w * l)
+							
+							function slider() {
+								$('.slide:first-child').animate({
+									marginLeft: -w
+								}, 'slow', function () {
+									$(this).appendTo($(this).parent()).css({marginLeft: 0});
+								});
+							}
+							var timer = setInterval(slider, 2000);
+							
+							$('#slider').hover(function(){
+								clearInterval(timer);
+							},function(){
+								timer = setInterval(slider, 2000);
+							});
+						});
+						</script>
+						<div id="slider">
+							<div id="slide-container">
+								<div class="slide">
+									<a href="https://www.amazon.com/gp/product/1678771031" target="_blank" class="image fit"><img src="images/books/rocking12.jpg" alt="" /></a>
+								</div>
+								<div class="slide">
+									<a href="https://www.amazon.com/gp/product/B087L4R4JK" target="_blank" class="image fit"><img src="images/books/WashHands_en.jpg" alt="" /></a>
+								</div>
+								<div class="slide">
+									<a href="https://www.amazon.com/gp/product/B087S9NWG6" target="_blank" class="image fit"><img src="images/books/WashHands_fr.jpg" alt="" /></a>
+								</div>
+								<div class="slide">
+									<a href="https://www.amazon.com/gp/product/B082ZGH7NL" target="_blank" class="image fit"><img src="images/books/rocking12.jpg" alt="" /></a>
+								</div>
+								<div class="slide">
+									<a href="https://www.amazon.com/gp/product/B087PNLGZ5" target="_blank" class="image fit"><img src="images/books/WashHands_en.jpg" alt="" /></a>
+								</div>
+								<div class="slide">
+									<a href="https://www.amazon.com/gp/product/B087TPRP6T" target="_blank" class="image fit"><img src="images/books/WashHands_fr.jpg" alt="" /></a>
+								</div>
+								<div class="slide">
+									<a href="https://www.amazon.com/gp/product/B087TFXFCN" target="_blank" class="image fit"><img src="images/books/WashHands_cn.jpg" alt="" /></a>
+								</div>
+							</div>
+						</div>
+						<div id="slider">
+							<div id="slide-container">
+								<div class="slide">
+									<h5>Rocking 12 - Everyday Comics: Paperback Edition</h5>
+								</div>
+								<div class="slide">
+									<h5>C'mon Let's Wash our hands!: paperback English Edition</h5>
+								</div>								
+								<div class="slide">
+									<h5>Allez, lavons-nous les mains!: paperback French Edition</h5>
+								</div>															
+								<div class="slide">
+									<h5>Rocking 12 - Everyday Comics: Kindle Edition</h5>
+								</div>								
+								<div class="slide">
+									<h5>C'mon Let's Wash our hands!: Kindle English Edition</h5>
+								</div>
+								<div class="slide">
+									<h5>Allez, lavons-nous les mains!: Kindle French Edition</h5>
+								</div>
+								<div class="slide">
+									<h5>C'mon Let's Wash our hands!: Kindle Chinese Edition</h5>
+								</div>
+							</div>
+						</div>
+						<p></p>
 					</section>
 
 				<!-- About Me -->
