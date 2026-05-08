@@ -1,90 +1,106 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>My Art Portfolio</title>
-		
-		<style>
-		    body {
-		        background-color:#d3dfe6;
-		    }
-		    
-		    .navbar_font {
-		        font-size:25px;
-		        font-family:Tahoma;
-		        color:#294766;
-		    }
-		    
-		    #selected {
-		        color:#598fb3;
-		    }
-		    
-		    h1 {
-		        font-size:50px;
-		        font-family:Georgia;
-		        color:#294766;
-		    }
-		    
-		    p {
-		        font-size:20px;
-		        font-family:Verdana;
-		        color:#3d6b99;
-		        line-height:30px;
-		    }
-		</style>
-	</head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasmin | Contact</title>
+  <meta name="description" content="Contact Jasmin through the portfolio form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="subpage">
+  <main class="desktop-page">
+    <div class="container">
+      <header class="hero-window tab-window">
+        <div class="tab-bar">
+          <span>home.tab</span>
+          <span class="tab-close" aria-hidden="true">x</span>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Portfolio</p>
+          <h1 class="pixel-title">Visual Designer + AI Builder</h1>
+          <p class="hero-text">
+            Hi, I am Jasmin. I study at the University of Waterloo and I enjoy combining visual design with practical AI-powered coding projects.
+          </p>
+          <div class="decorative-text" aria-hidden="true">+ // [] +</div>
+        </div>
+        <a class="home-return-link" href="index.html" aria-label="Back to main home page">
+          <img class="home-return-cursor" src="images/cursor.png" alt="" aria-hidden="true">
+          <span class="home-return-text">back to home</span>
+        </a>
+      </header>
 
-	<body><center>
-	    <a href="index.html" class="navbar_font">
-            Home
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	   
-	    <a href="comics.html" class="navbar_font">
-            Comics
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-        <a href="sketches.html" class="navbar_font">
-            Sketches
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-        <a href="doodles.html" class="navbar_font">
-            Doodles
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-        <a href="misc.html" class="navbar_font">
-            Miscellaneous
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-        <a href="books.html" class="navbar_font">
-            Books
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-        <a href="commissions.html" class="navbar_font">
-            Commissions
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-        <a href="contact.html" class="navbar_font" id="selected">
-            Contact
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-        <hr>
-        
-        <br>
-        <h1>Get In Touch</h1>
-        <p>Don't hesitate to reach out if you have any questions, comments, or just want to chat!</p>
-        <hr>
-        <p><b>Email:</b> jasminliart@gmail.com</p>
-        <p><b>Instagram:</b> jl_sloth_artist</p>
-        <p><b>Fiverr:</b> jlartist</p>
-        <br>
-        <img src="https://codehs.com/uploads/d93c33d5b93cd704271a918e48b50060" height="150px">
-        <br><br><br>
-        <a href="commissions.html">
-            <img src="https://codehs.com/uploads/20063874d6942e4b784307a4b37e857a" height="50px">
+      <section class="folder-row" aria-label="Section folders">
+        <a class="folder-link home-folder-link" href="index.html" aria-label="Back to home page">
+          <img class="folder-icon home-folder-icon" src="images/cursor.png" alt="" aria-hidden="true">
+          <span>home</span>
         </a>
-        <br>
-        <a href="index.html">
-            <p>Back to home</p>
+        <a class="folder-link" href="about.html">
+          <img class="folder-icon" src="images/folder.png" alt="" aria-hidden="true">
+          <span>about</span>
         </a>
-        <br><br><br>
-    </body></center>
+        <a class="folder-link" href="projects.html">
+          <img class="folder-icon" src="images/folder.png" alt="" aria-hidden="true">
+          <span>projects</span>
+        </a>
+        <a class="folder-link is-active" href="contact.html">
+          <img class="folder-icon" src="images/folder.png" alt="" aria-hidden="true">
+          <span>contact</span>
+        </a>
+      </section>
+
+      <section class="content-panel tab-window">
+        <div class="tab-bar"><span>contact.tab</span><span class="tab-close" aria-hidden="true">x</span></div>
+        <div class="hero-content">
+          <h2>+ Contact</h2>
+          <form class="contact-form" action="mailto:jasmin@example.com" method="post" enctype="text/plain">
+            <div class="form-row two-col">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required>
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Subject
+                <input type="text" name="subject" placeholder="How can I help?" required>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Message
+                <textarea name="message" rows="6" placeholder="Write your message here..." required></textarea>
+              </label>
+            </div>
+            <div class="form-row">
+              <button class="submit-btn" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="decorative-icons" aria-hidden="true">
+        <img class="deco deco-mouse" src="images/mouse.png" alt="">
+        <img class="deco deco-pointer" src="images/pointer.png" alt="">
+        <img class="deco deco-sunglasses" src="images/sunglasses.png" alt="">
+        <img class="deco deco-typing" src="images/typing.png" alt="">
+      </section>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Jasmin. Built with love.</p>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

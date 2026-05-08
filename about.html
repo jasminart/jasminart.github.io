@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jasmin | Portfolio</title>
-  <meta name="description" content="Jasmin's portfolio homepage with folder navigation to about, projects, and contact.">
+  <title>Jasmin | About</title>
+  <meta name="description" content="About Jasmin's design and AI-focused portfolio.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <main id="top" class="desktop-page">
+<body class="subpage">
+  <main class="desktop-page">
     <div class="container">
       <header class="hero-window tab-window">
-        <div class="tab-bar"><span>home.tab</span><span class="tab-close" aria-hidden="true">x</span></div>
+        <div class="tab-bar">
+          <span>home.tab</span>
+          <span class="tab-close" aria-hidden="true">x</span>
+        </div>
         <div class="hero-content">
           <p class="eyebrow">Portfolio</p>
           <h1 class="pixel-title">Visual Designer + AI Builder</h1>
@@ -24,10 +27,18 @@
           </p>
           <div class="decorative-text" aria-hidden="true">+ // [] +</div>
         </div>
+        <a class="home-return-link" href="index.html" aria-label="Back to main home page">
+          <img class="home-return-cursor" src="images/cursor.png" alt="" aria-hidden="true">
+          <span class="home-return-text">back to home</span>
+        </a>
       </header>
 
       <section class="folder-row" aria-label="Section folders">
-        <a class="folder-link" href="about.html">
+        <a class="folder-link home-folder-link" href="index.html" aria-label="Back to home page">
+          <img class="folder-icon home-folder-icon" src="images/cursor.png" alt="" aria-hidden="true">
+          <span>home</span>
+        </a>
+        <a class="folder-link is-active" href="about.html">
           <img class="folder-icon" src="images/folder.png" alt="" aria-hidden="true">
           <span>about</span>
         </a>
@@ -42,16 +53,13 @@
       </section>
 
       <section class="content-panel tab-window">
-        <div class="tab-bar"><span>latest-work.tab</span><span class="tab-close" aria-hidden="true">x</span></div>
+        <div class="tab-bar"><span>about.tab</span><span class="tab-close" aria-hidden="true">x</span></div>
         <div class="hero-content">
-          <h2>// Latest Work</h2>
-          <article class="latest-work-card">
-            <h3>Practice Log</h3>
-            <p>
-              QR-Based Instrument Practice Tracker: a kiosk-friendly web app where students scan a QR code to start/end practice, with automatic session validation, live stats, leaderboards, and admin insights.
-            </p>
-            <a class="latest-link" href="projects.html">open full project list →</a>
-          </article>
+          <h2>+ About Me</h2>
+          <p>
+            I am a visual designer who also loves building AI-centered coding projects. I like creating products that feel intuitive and look polished while solving real workflow problems.
+          </p>
+          <p>Education: University of Waterloo (current).</p>
         </div>
       </section>
 

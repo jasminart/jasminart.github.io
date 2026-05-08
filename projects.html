@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasmin | Projects</title>
+  <meta name="description" content="Projects page for Jasmin's portfolio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="subpage">
+  <main class="desktop-page">
+    <div class="container">
+      <header class="hero-window tab-window">
+        <div class="tab-bar">
+          <span>home.tab</span>
+          <span class="tab-close" aria-hidden="true">x</span>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Portfolio</p>
+          <h1 class="pixel-title">Visual Designer + AI Builder</h1>
+          <p class="hero-text">
+            Hi, I am Jasmin. I study at the University of Waterloo and I enjoy combining visual design with practical AI-powered coding projects.
+          </p>
+          <div class="decorative-text" aria-hidden="true">+ // [] +</div>
+        </div>
+        <a class="home-return-link" href="index.html" aria-label="Back to main home page">
+          <img class="home-return-cursor" src="images/cursor.png" alt="" aria-hidden="true">
+          <span class="home-return-text">back to home</span>
+        </a>
+      </header>
+
+      <section class="folder-row" aria-label="Section folders">
+        <a class="folder-link home-folder-link" href="index.html" aria-label="Back to home page">
+          <img class="folder-icon home-folder-icon" src="images/cursor.png" alt="" aria-hidden="true">
+          <span>home</span>
+        </a>
+        <a class="folder-link" href="about.html">
+          <img class="folder-icon" src="images/folder.png" alt="" aria-hidden="true">
+          <span>about</span>
+        </a>
+        <a class="folder-link is-active" href="projects.html">
+          <img class="folder-icon" src="images/folder.png" alt="" aria-hidden="true">
+          <span>projects</span>
+        </a>
+        <a class="folder-link" href="contact.html">
+          <img class="folder-icon" src="images/folder.png" alt="" aria-hidden="true">
+          <span>contact</span>
+        </a>
+      </section>
+
+      <section class="content-panel tab-window">
+        <div class="tab-bar"><span>projects.tab</span><span class="tab-close" aria-hidden="true">x</span></div>
+        <div class="hero-content">
+          <h2>// AI Programming Projects</h2>
+          <article>
+            <h3>Practice Log</h3>
+            <p><strong>QR-Based Instrument Practice Tracker</strong></p>
+            <p>
+              A kiosk-friendly web app that tracks music practice sessions through QR code scan-in / scan-out and turns them into live stats, leaderboards, and admin insights.
+            </p>
+            <p>
+              Manual practice tracking is easy to forget and hard to review. Practice Log solves this by letting students scan a QR code to start/end practice while the system automatically records, validates, and summarizes each session.
+            </p>
+            <p>
+              <strong>Tools Used:</strong> React, Vite, Capacitor, Node.js, Express, Supabase, Vercel, Tailwind CSS, Radix UI, jsQR, Cursor
+            </p>
+            <ul>
+              <li>Touch-friendly kiosk interface for tablet use</li>
+              <li>QR scan flow: scan once to start, scan again to end</li>
+              <li>Admin dashboard for daily logs, summaries, open sessions, and flagged items</li>
+              <li>Manual correction tools for adding, editing, approving, or deleting sessions</li>
+              <li>Gamified leaderboard with progress bars, grades, and achievement badges</li>
+              <li>Auto rules for duplicate scans, stale sessions, and suspicious short sessions</li>
+            </ul>
+            <div class="project-feature-gallery" aria-label="Practice Log feature screenshots">
+              <figure class="project-feature-card flow-left">
+                <div class="project-feature-tab">
+                  <span>kiosk.tab</span>
+                  <span class="tab-close" aria-hidden="true">x</span>
+                </div>
+                <button class="project-feature-trigger" type="button" data-image-src="images/kiosk_view.png" data-image-alt="Practice Log kiosk interface for QR scan and leaderboard">
+                  <img src="images/kiosk_view.png" alt="Practice Log kiosk interface for QR scan and leaderboard">
+                </button>
+                <figcaption>Kiosk View</figcaption>
+              </figure>
+              <figure class="project-feature-card flow-right">
+                <div class="project-feature-tab">
+                  <span>admin.tab</span>
+                  <span class="tab-close" aria-hidden="true">x</span>
+                </div>
+                <button class="project-feature-trigger" type="button" data-image-src="images/admin_view.png" data-image-alt="Practice Log admin dashboard with sessions, leaderboard, and flagged items">
+                  <img src="images/admin_view.png" alt="Practice Log admin dashboard with sessions, leaderboard, and flagged items">
+                </button>
+                <figcaption>Admin Dashboard</figcaption>
+              </figure>
+              <figure class="project-feature-card flow-left-wide">
+                <div class="project-feature-tab">
+                  <span>history.tab</span>
+                  <span class="tab-close" aria-hidden="true">x</span>
+                </div>
+                <button class="project-feature-trigger" type="button" data-image-src="images/history_view.png" data-image-alt="Practice Log session history page with logged entries">
+                  <img src="images/history_view.png" alt="Practice Log session history page with logged entries">
+                </button>
+                <figcaption>Session History</figcaption>
+              </figure>
+            </div>
+            <p>
+              <a class="latest-link" href="https://github.com/mistermonke26/practice-log" target="_blank" rel="noopener noreferrer">github.com/mistermonke26/practice-log</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="decorative-icons" aria-hidden="true">
+        <img class="deco deco-mouse" src="images/mouse.png" alt="">
+        <img class="deco deco-pointer" src="images/pointer.png" alt="">
+        <img class="deco deco-sunglasses" src="images/sunglasses.png" alt="">
+        <img class="deco deco-typing" src="images/typing.png" alt="">
+      </section>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Jasmin. Built with love.</p>
+      </footer>
+    </div>
+  </main>
+
+  <div class="lightbox" id="feature-lightbox" hidden>
+    <button class="lightbox-close" type="button" aria-label="Close image preview">×</button>
+    <img class="lightbox-image" src="" alt="">
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const featureLightbox = document.getElementById("feature-lightbox");
+    const featureLightboxImage = featureLightbox.querySelector(".lightbox-image");
+    const featureCloseButton = featureLightbox.querySelector(".lightbox-close");
+    const featureTriggers = document.querySelectorAll(".project-feature-trigger");
+
+    const closeLightbox = () => {
+      featureLightbox.hidden = true;
+      featureLightboxImage.src = "";
+      featureLightboxImage.alt = "";
+      document.body.style.overflow = "";
+    };
+
+    featureTriggers.forEach((button) => {
+      button.addEventListener("click", () => {
+        featureLightboxImage.src = button.dataset.imageSrc;
+        featureLightboxImage.alt = button.dataset.imageAlt;
+        featureLightbox.hidden = false;
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    featureCloseButton.addEventListener("click", closeLightbox);
+    featureLightbox.addEventListener("click", (event) => {
+      if (event.target === featureLightbox) {
+        closeLightbox();
+      }
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !featureLightbox.hidden) {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
